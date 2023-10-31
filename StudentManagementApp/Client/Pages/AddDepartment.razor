@@ -1,0 +1,77 @@
+@* The Razor component to add new Department *@
+
+@page "/adddept"
+
+@* Dependency injection *@
+@inject IStudentService StudentService
+@inject IDepartmentService DepartmentService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Add Department</PageTitle>
+<style>
+    .addnewdeptform{
+         background-color: rgba(165, 160, 160, 0.721);
+         margin-left: 5%;
+         margin-right: 5%;
+         padding-top: 5%;
+         padding-bottom: 5%;
+         padding-left: 5%;
+         padding-right: 5%;
+         margin-top: 3%;
+    }
+    .addnewdept .row1,
+    {
+          margin-left: 3%;
+          margin-top: 4%;
+          margin-right: 3%;
+    }
+    .addnewdept .row2{
+          margin-top: 2%;
+          margin-bottom: 2%;     
+    }
+
+    
+</style>
+<h3> Add New Department</h3>
+<hr />
+
+<div class="addnewdeptform">
+@* Input field *@
+<form>
+    <div class="rowall">
+        <div class="row1">
+                <label for="DeptId" class="control-label">Department Id</label>
+                <input form = "DeptId" class="form-control" @bind="dep.DeptId"/>
+        </div>
+        <div class="row2">
+            <div class="form-group mt-2">
+                <label for="DeptName" class="control-lablel">Department Name</label>
+                <input form = "DeptName" class="form-control" @bind="dep.DeptName"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group mt-2">
+                <input type="button" class="btn btn-primary" @onclick="CreateNewDepartment" value="Save Department" />
+                <input type="button" class="btn btn-danger" @onclick = "Discard" value="Discard" />
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+@code{
+    //initialize new Department object to store department data
+    Department dep = new Department();
+    protected async Task CreateNewDepartment()
+    {
+        await DepartmentService.CreateDepartment(dep);
+        NavigationManager.NavigateTo("Department");
+    }
+    protected void Discard()
+    {
+        NavigationManager.NavigateTo("Department");
+    }
+}

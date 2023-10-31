@@ -1,0 +1,108 @@
+﻿@* The Razor component to display Department *@
+
+@page "/department"
+@inject IStudentService StudentService
+@inject IDepartmentService DepartmentService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Departments</PageTitle>
+<style>
+    .addbutton{
+        background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+        width: 20%;
+        border-radius: 2%;
+        border-color: rgb(5, 39, 103);
+        color: white;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even){background-color: #e6e6e6}
+    thead{
+        background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 60%);
+        color: white;
+    }
+
+   
+    .nav-link{
+        color: white;
+    }
+    .nav-link:hover{
+        color: white;
+    }
+    
+</style>
+<h3>Departments</h3>
+<div class="addbutton">
+<NavLink class = "nav-link" href="adddept">
+    <span class="oi oi-plus" aria-hidden="true">Add New Department</span>
+</NavLink></div>
+
+@if(DepartmentService.departments is null)
+{
+    <div class="spinner">
+
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Department Id
+                </th>
+                <th>
+                    Department
+                </th>
+                <th>
+                    Edit
+                </th>
+                <th>
+                    Delete
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var obj in DepartmentService.departments)
+            {
+                <tr>
+                    <td>
+                        @obj.DeptId
+                    </td>
+                    <td>
+                        @obj.DeptName
+                    </td>
+                    <td>
+                        <a class="nav-link btn btn-primary" href="updatedept/@obj.DeptId">
+                            <span class="oi oi-pencil" aria-hidden="true">Edit</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a class="nav-link btn btn-danger" href="deletedept/@obj.DeptId">
+                            <span class="oi oi-trash" aria-hidden="true">Delete</span>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+   
+    protected override async Task OnInitializedAsync(){
+        await DepartmentService.GetDepartments();
+    }
+}
+
+

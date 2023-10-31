@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\StudentManagementApp.Server.props" />
+</Project>

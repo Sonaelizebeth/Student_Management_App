@@ -1,0 +1,109 @@
+﻿@* The Razor component to update student *@
+
+@page "/update/{Id}"
+@inject IStudentService StudentService
+@inject IDepartmentService DepartmentService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Update Student</PageTitle>
+<style>
+    .editstudentform{
+        background-color: rgba(165, 160, 160, 0.721);
+         margin-left: 5%;
+         margin-right: 5%;
+         padding-top: 5%;
+         padding-bottom: 5%;
+         padding-left: 5%;
+         padding-right: 5%;
+         margin-top: 3%;
+    }
+    .editstudentform .form-group{
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+</style>
+<h2>Edit Student Detail</h2>
+<hr />
+
+@if(obj!=null){
+<div class="editstudentform">
+<form>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <input form="Id" class="form-control" @bind="obj.Id" disabled/>
+            </div>
+            <div class="form-group">
+                <label for="Name" class="control-label"> Name</label>
+                <input for="Name" class="form-control" @bind="obj.Name" />
+            </div>
+            <div class = "form-group">
+                <label for= "DeptId" class="control-label">Department</label>
+                <select form="DeptId" class="form-control" @bind="obj.DeptId" disabled>
+                    <option value = "O">Select Department</option>
+                    @foreach(var department in DepartmentService.departments)
+                    {
+                        <option value = "@department.DeptId">@department.DeptName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="FirstMark" class="control-label"> First Internal Mark </label>
+                <input for="FirstMark" class="form-control" @bind="obj.FirstMark" />
+            </div>
+            <div class="form-group">
+                <label for="SecondMark" class="control-label"> Second Internal Mark</label>
+                <input for="SecondMark" class="form-control" @bind="obj.SecondMark" />
+            </div>
+            <div class="form-group">
+                <label for="TotalMark" class="control-label"> Total Mark</label>
+                <input for="TotalMark" class="form-control" @bind="obj.TotalMark" />
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="UpdateStudents" value="Update" />
+                <input type="button" class="btn btn-primary" @onclick="Cancel" value="Cancel" />
+            </div>
+        </div>
+    </div>
+</form></div>
+}
+else{
+    <div class="spinner">
+
+    </div>
+}
+@code {
+    [Parameter]
+    public string Id { get; set; }
+    int studentId;
+    Student obj = new Student();
+    protected override async Task OnInitializedAsync()
+    {
+        if(int.TryParse(Id,out studentId)){
+            obj= await StudentService.GetStudentById(studentId);
+            if(obj==null){
+                NavigationManager.NavigateTo("/error");
+            }
+        }
+        else{
+            NavigationManager.NavigateTo("/error");
+        }  
+    }
+    protected async Task UpdateStudents()
+    {
+
+        await StudentService.UpdateStudent(obj);
+        NavigationManager.NavigateTo("Student"); 
+       
+    }
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("Student");
+    }
+}

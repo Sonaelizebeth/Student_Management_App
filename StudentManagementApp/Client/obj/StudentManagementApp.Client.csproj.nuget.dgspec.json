@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Client\\StudentManagementApp.Client.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Client\\StudentManagementApp.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Client\\StudentManagementApp.Client.csproj",
+        "projectName": "StudentManagementApp.Client",
+        "projectPath": "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Client\\StudentManagementApp.Client.csproj",
+        "packagesPath": "C:\\Users\\sshaji003\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sshaji003\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Shared\\StudentManagementApp.Shared.csproj": {
+                "projectPath": "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Shared\\StudentManagementApp.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0-rc.2.23479.6, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[7.0.12, 7.0.12]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Shared\\StudentManagementApp.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Shared\\StudentManagementApp.Shared.csproj",
+        "projectName": "StudentManagementApp.Shared",
+        "projectPath": "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Shared\\StudentManagementApp.Shared.csproj",
+        "packagesPath": "C:\\Users\\sshaji003\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sshaji003\\Sona Shaji\\Guidehouse India Training\\.NET Training\\Blazor\\FrontBean\\StudentManagementApp\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\sshaji003\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
