@@ -1,0 +1,52 @@
+@* The Razor component to add new Department *@
+
+@page "/adddept"
+
+@* Dependency injection *@
+@inject IStudentService StudentService
+@inject IDepartmentService DepartmentService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Add Department</PageTitle>
+<h3> Add New Department</h3>
+<hr />
+
+@* Input field *@
+<form>
+    <div class="row">
+        <div class="form-group">
+                <label for="DeptId" class="control-label">Department Id</label>
+                <input form = "DeptId" class="form-control" @bind="dep.DeptId"/>
+        </div>
+        <div class="col-md-8">
+            <div class="form-group">
+                <label for="DeptName" class="control-lablel">Department Name</label>
+                <input form = "DeptName" class="form-control" @bind="dep.DeptName"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="CreateNewDepartment" value="Save Department" />
+                <input type="button" class="btn btn-danger" @onclick = "Discard" value="Discard" />
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@code{
+    //initialize new Department object to store department data
+    Department dep = new Department();
+    protected async Task CreateNewDepartment()
+    {
+        await DepartmentService.CreateDepartment(dep);
+        NavigationManager.NavigateTo("Department");
+    }
+    protected void Discard()
+    {
+        NavigationManager.NavigateTo("Department");
+    }
+}

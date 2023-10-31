@@ -1,0 +1,33 @@
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.deps.json
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.pdb
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.AssemblyInfoInputs.cache
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.AssemblyInfo.cs
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\obj\Debug\net7.0\refint\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.pdb
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle\StudentManagementApp\Shared\obj\Debug\net7.0\ref\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.deps.json
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.pdb
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.AssemblyInfoInputs.cache
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.AssemblyInfo.cs
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\obj\Debug\net7.0\refint\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.pdb
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Beagle - Copy\StudentManagementApp\Shared\obj\Debug\net7.0\ref\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.deps.json
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\bin\Debug\net7.0\StudentManagementApp.Shared.pdb
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.AssemblyInfoInputs.cache
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.AssemblyInfo.cs
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\obj\Debug\net7.0\refint\StudentManagementApp.Shared.dll
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\obj\Debug\net7.0\StudentManagementApp.Shared.pdb
+C:\Users\sshaji003\Sona Shaji\Guidehouse India Training\.NET Training\Blazor\Bean\StudentManagementApp\Shared\obj\Debug\net7.0\ref\StudentManagementApp.Shared.dll

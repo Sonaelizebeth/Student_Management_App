@@ -1,0 +1,73 @@
+﻿@* The Razor component to display Department *@
+
+@page "/department"
+@inject IStudentService StudentService
+@inject IDepartmentService DepartmentService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Departments</PageTitle>
+
+<h3>Departments</h3>
+<NavLink class = "nav-link" href="adddept">
+    <span class="oi oi-plus" aria-hidden="true">Add New Department</span>
+</NavLink>
+
+@if(DepartmentService.departments is null)
+{
+    <div class="spinner">
+
+    </div>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Department Id
+                </th>
+                <th>
+                    Department
+                </th>
+                <th>
+                    Edit
+                </th>
+                <th>
+                    Delete
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var obj in DepartmentService.departments)
+            {
+                <tr>
+                    <td>
+                        @obj.DeptId
+                    </td>
+                    <td>
+                        @obj.DeptName
+                    </td>
+                    <td>
+                        <a class="nav-link btn btn-primary" href="updatedept/@obj.DeptId">
+                            <span class="oi oi-pencil" aria-hidden="true">Edit</span>
+                        </a>
+                    </td>
+                    <td>
+                        <a class="nav-link btn btn-danger" href="deletedept/@obj.DeptId">
+                            <span class="oi oi-trash" aria-hidden="true">Delete</span>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+   
+    protected override async Task OnInitializedAsync(){
+        await DepartmentService.GetDepartments();
+    }
+}
+
+
